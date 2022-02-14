@@ -1,0 +1,21 @@
+{
+  "name": "uups-proxy-demo",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "tests": "npx hardhat test",
+    "deploy_v1": "npx hardhat run ./scripts/deploy_pizza_v1.js --network",
+    "upgrade_v2": "npx hardhat run ./scripts/upgrade_pizza_v2.js --network"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.0.1",
+    "@openzeppelin/contracts-upgradeable": "^4.5.0",
+    "@openzeppelin/hardhat-upgrades": "^1.14.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.4"
+  }
+}
